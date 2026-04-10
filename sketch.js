@@ -38,39 +38,6 @@ function mousePressed(){
   video.loop();
 }
 
-// function draw() {
-//   background(0);
-
-//   if (video) image(video, 0, 0, width, height);
-
-//   if (!videoReady || !jsonReady) return;
-
-//   const frameIndex = Math.round(video.time() * frameRateVideo);
-//   const frameKey = `frame${String(frameIndex).padStart(4, "0")}.jpg`;
-//   const preds = detections[frameKey] || [];
-
-//   let scaleX = width / video.elt.videoWidth;
-//   let scaleY = height / video.elt.videoHeight;
-
-//   preds.forEach(p => {
-//     if (p.confidence < confidenceThreshold) return;
-
-//     stroke(255, 0, 0);
-//     strokeWeight(3);
-//     noFill();
-//     rect(
-//       (p.x - p.width / 2) * scaleX,
-//       (p.y - p.height / 2) * scaleY,
-//       p.width * scaleX,
-//       p.height * scaleY
-//     );
-
-//     fill(255);
-//     noStroke();
-//     textSize(14);
-//     text(p.class, p.x * scaleX, p.y * scaleY - 5);
-//   });
-// }
 
 function draw() {
   background(0);
